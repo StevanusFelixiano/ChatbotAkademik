@@ -31,7 +31,7 @@ LOGO_TI = "assets/logo_ti_unpad.png"
 # Pesan fallback jika confidence rendah
 FALLBACK_MSG = (
     "Maaf, pertanyaan tidak dapat dijawab karena berada di luar cakupan "
-    "pengetahuan sistem atau memerlukan informasi yang bersifat spesifik "
+    "pengetahuan sistem atau memerlukan informasi yang bersifat dinamis "
     "dan personal."
 )
 
@@ -335,4 +335,5 @@ st.divider()
 # Tombol untuk menghapus seluruh percakapan
 if st.button("🧹 Bersihkan Percakapan"):
     st.session_state.messages = []
+
     st.rerun()
