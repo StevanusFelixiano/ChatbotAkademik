@@ -25,7 +25,7 @@ from transformers import AutoModelForSequenceClassification
 MODEL_DIR = "best_fold_model_indobert"
 DATA_PATH = "dataset_chatbot.json"
 MAX_LENGTH = 64
-CONF_THRESHOLD = 0.50
+CONF_THRESHOLD = 0.70
 LOGO_UNPAD = "assets/logo_unpad.png"
 LOGO_TI = "assets/logo_ti_unpad.png"
 # Pesan fallback jika confidence rendah
@@ -337,3 +337,4 @@ if st.button("🧹 Bersihkan Percakapan"):
     st.session_state.messages = []
 
     st.rerun()
+
